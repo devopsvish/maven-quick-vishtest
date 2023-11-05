@@ -6,12 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Git Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/devopsvish/maven-quick-vishtest.git'
-            }
-        }
-        
         stage('mvn compile') {
             steps {
                 sh 'mvn compile'
