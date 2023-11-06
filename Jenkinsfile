@@ -1,5 +1,7 @@
 pipeline {
-    agent second
+    agent {
+        label 'second'
+    }
     
     tools {
         maven "MySlaveMVN"
