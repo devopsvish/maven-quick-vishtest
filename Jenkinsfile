@@ -1,8 +1,6 @@
 pipeline {
-    agent any
-    
-    tools {
-        maven "maven-3.9.5"
+    agent {
+        label "node-1"
     }
 
     stages {
