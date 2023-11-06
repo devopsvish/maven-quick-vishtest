@@ -1,8 +1,8 @@
 pipeline {
-    agent any
+    agent second
     
     tools {
-        maven "maven-3.9.5"
+        maven "MySlaveMVN"
     }
 
     stages {
