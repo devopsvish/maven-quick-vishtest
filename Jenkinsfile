@@ -4,7 +4,7 @@ pipeline {
     }
 
     tools {
-        maven: "MySlaveMVN2"
+        maven "MySlaveMVN2"
     }
 
     stages {
