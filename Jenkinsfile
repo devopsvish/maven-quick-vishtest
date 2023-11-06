@@ -3,6 +3,10 @@ pipeline {
         label "node-1"
     }
 
+    tools {
+        maven: "MySlaveMVN2"
+    }
+
     stages {
         stage('mvn compile') {
             steps {
